@@ -13,8 +13,6 @@ if(typeof self.CACHE_NAME !== 'string') {
 	throw new Error('Cache Name cannot be empty');
 }
 
-self.addEventListener('fetch', function(event) {
-
 	// Respond with content from fetch or cache
   self.addEventListener('fetch', function(event) {
     event.respondWith(
@@ -56,7 +54,6 @@ self.addEventListener('fetch', function(event) {
             })
     );
   });
-});
 
 // Now we need to clean up resources in the previous versions
 // of Service Worker scripts
