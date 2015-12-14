@@ -53,7 +53,7 @@ if(typeof self.CACHE_NAME !== 'string') {
                     return response;
                   }
               );
-            });
+            })
     );
   });
 
