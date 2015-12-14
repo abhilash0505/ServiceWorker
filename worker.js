@@ -1,9 +1,11 @@
 importScripts('serviceworker-cache-polyfill.js');
 
+var EVENT;
+
 self.addEventListener('fetch', function(event) {
+  debugger;
+  EVENT = event;
   event.respondWith(
-	  console.log(event.request);
-	  var caches = [];
     caches.match(event.request)
       .then(function(response) {
         // Cache hit - return response
