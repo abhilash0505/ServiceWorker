@@ -13,7 +13,7 @@ if(typeof self.CACHE_NAME !== 'string') {
 	throw new Error('Cache Name cannot be empty');
 }
 
-	// Respond with content from fetch or cache
+  	// Respond with content from fetch or cache
   self.addEventListener('fetch', function(event) {
     event.respondWith(
         caches.match(event.request)
@@ -66,6 +66,13 @@ self.addEventListener('activate', function(event) {
 },{"./lib/serviceworker-caches":3}],3:[function(require,module,exports){
 if (!Cache.prototype.add) {
   Cache.prototype.add = function add(request) {
+    console.log(request);
+    //cache.addAll(urlsToPrefetch.map(function(urlToPrefetch) {
+    //  return new Request(urlToPrefetch, { mode: 'no-cors' });
+    //})).then(function() {
+    //  console.log('All resources have been fetched and cached.');
+    //});
+
     return this.addAll([request]);
   };
 }
