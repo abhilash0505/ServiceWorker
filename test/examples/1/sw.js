@@ -66,14 +66,8 @@ self.addEventListener('activate', function(event) {
 },{"./lib/serviceworker-caches":3}],3:[function(require,module,exports){
 if (!Cache.prototype.add) {
   Cache.prototype.add = function add(request) {
-    console.log(request);
-    //cache.addAll(urlsToPrefetch.map(function(urlToPrefetch) {
-    //  return new Request(urlToPrefetch, { mode: 'no-cors' });
-    //})).then(function() {
-    //  console.log('All resources have been fetched and cached.');
-    //});
-
-    return this.addAll([request]);
+    var req = new Request(request.url, { mode: 'no-cors' });
+    return this.addAll([req]);
   };
 }
 
