@@ -4,7 +4,6 @@ $(function() {
 		for(var i=0; i < 100; i++){
 				$('body').append('<img src="'+url+'?rand='+i+'"/>');
 		}
-		
 	});
 });
 
