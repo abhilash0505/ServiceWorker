@@ -18,6 +18,7 @@ if(typeof self.CACHE_NAME !== 'string') {
     event.respondWith(
         caches.match(event.request)
             .then(function(response) {
+              debugger;
               // Cache hit - return response
               if (response) {
                 console.log("from Cache");
@@ -34,6 +35,7 @@ if(typeof self.CACHE_NAME !== 'string') {
                   function(response) {
                     // Check if we received a valid response
                     if(!response || response.status !== 200 || response.type !== 'basic') {
+                      console.log("Not from Cache");
                       return response;
                     }
 
@@ -51,7 +53,7 @@ if(typeof self.CACHE_NAME !== 'string') {
                     return response;
                   }
               );
-            })
+            });
     );
   });
 
