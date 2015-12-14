@@ -18,7 +18,6 @@ if(typeof self.CACHE_NAME !== 'string') {
     event.respondWith(
         caches.match(event.request)
             .then(function(response) {
-              debugger;
               // Cache hit - return response
               if (response) {
                 console.log("from Cache");
