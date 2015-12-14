@@ -22,6 +22,10 @@ self.addEventListener('fetch', function(event) {
 
 	// Respond with content from fetch or cache
 	event.respondWith(
+		var res;
+		res = caches.match(cacheRequest);
+		if(res)
+			return res;
 
 		// Try fetch
 		fetch(fetchRequest)
