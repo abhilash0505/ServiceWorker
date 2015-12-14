@@ -22,50 +22,55 @@ self.addEventListener('fetch', function(event) {
 
 	// Respond with content from fetch or cache
 	event.respondWith(
-		var res;
-		res = caches.match(cacheRequest);
-		console.log(res);
-		if(res)
-			return res;
+  caches.match(event.request)
+        .then(function(response) {
+          // Cache hit - return response
+          if (response) {
+            return response;
+          }
 
-		// Try fetch
-		fetch(fetchRequest)
+	  
 
-			// when fetch is successful, we update the cache
-			.then(function(response) {
+			// Try fetch
+			fetch(fetchRequest)
 
-				// A response is a stream and can be consumed only once.
-				// Because we want the browser to consume the response,
-				// as well as cache to consume the response, we need to
-				// clone it so we have 2 streams
-				var responseToCache = response.clone();
+				// when fetch is successful, we update the cache
+				.then(function(response) {
 
-				// and update the cache
-				caches
-					.open(self.CACHE_NAME)
-					.then(function(cache) {
+					// A response is a stream and can be consumed only once.
+					// Because we want the browser to consume the response,
+					// as well as cache to consume the response, we need to
+					// clone it so we have 2 streams
+					var responseToCache = response.clone();
 
-						// Clone the request again to use it
-						// as the key for our cache
-						var cacheSaveRequest = event.request.clone();
-						cache.put(cacheSaveRequest, responseToCache);
+					// and update the cache
+					caches
+						.open(self.CACHE_NAME)
+						.then(function(cache) {
 
-					});
+							// Clone the request again to use it
+							// as the key for our cache
+							var cacheSaveRequest = event.request.clone();
+							cache.put(cacheSaveRequest, responseToCache);
 
-				// Return the response stream to be consumed by browser
-				return response;
+						});
 
-			})
+					// Return the response stream to be consumed by browser
+					return response;
 
-			// when fetch times out or fails
-			.catch(function(err) {
+				})
 
-				// Return the promise which
-				// resolves on a match in cache for the current request
-				// ot rejects if no matches are found
-				return caches.match(cacheRequest);
+				// when fetch times out or fails
+				.catch(function(err) {
 
-			})
+					// Return the promise which
+					// resolves on a match in cache for the current request
+					// ot rejects if no matches are found
+					return caches.match(cacheRequest);
+
+				})
+			
+			});
 	);
 });
 
