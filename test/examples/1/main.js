@@ -1,33 +1,10 @@
-function jsonFlickrApi(response) {
-	var cats = $("#cats");
-	$.each(response.photos.photo, function(i, item) {
-		var src = "https://farm"
-			+ item.farm
-			+ ".static.flickr.com/"
-			+ item.server
-			+ "/" + item.id
-			+ "_" + item.secret
-			+ "_n.jpg";
-		var container = $("<li/>").appendTo(cats);
-		$("<img/>").attr("src", src).appendTo(container);
-	});
-}
-
 $(function() {
-	$.ajax({
-		url: flickr_api_url,
-		method: 'GET',
-		dataType: 'jsonp',
-		jsonpCallback: 'jsonFlickrApi',
-		cache: true,
-		data: {
-			tags: 'cat',
-			safe_search: 1,
-			per_page: 20
-		},
-		error: function(err) {
-			console.log(err);
+	$(function(){
+		var url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pleiades_large.jpg/1024px-Pleiades_large.jpg';
+		for(var i=0; i < 100; i++){
+				$('body').append('<img src="'+url+'?rand='+i+'"/>');
 		}
+		
 	});
 });
 
