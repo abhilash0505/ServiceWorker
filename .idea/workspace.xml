@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c7a0b3f-3e1b-4028-92a9-650e904a1ebf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/examples/1/sw.js" afterPath="$PROJECT_DIR$/test/examples/1/sw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/examples/1/main.js" afterPath="$PROJECT_DIR$/test/examples/1/main.js" />
     </list>
     <ignored path="ServiceWorker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,20 +23,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/examples/1/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-              <folding />
+            <state vertical-scroll-proportion="0.22029373">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sw.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sw.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/examples/1/sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9141274">
+            <state vertical-scroll-proportion="-12.222222">
               <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
               <folding />
             </state>
@@ -51,8 +53,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/examples/1/main.js" />
         <option value="$PROJECT_DIR$/test/examples/1/sw.js" />
+        <option value="$PROJECT_DIR$/test/examples/1/main.js" />
       </list>
     </option>
   </component>
@@ -196,19 +198,21 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/examples/1/main.js">
+    <entry file="file://$PROJECT_DIR$/test/examples/1/sw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state vertical-scroll-proportion="-12.222222">
+          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/examples/1/sw.js">
+    <entry file="file://$PROJECT_DIR$/test/examples/1/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9141274">
-          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-          <folding />
+        <state vertical-scroll-proportion="0.22029373">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
