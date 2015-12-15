@@ -65,7 +65,10 @@
                 }else{
                     return fetchMe(event.request);
                 }
-            });
+            })
+
+
+        });
 
 
         function fetchMe(request) {
