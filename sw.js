@@ -50,6 +50,7 @@
                         .then(function (response) {
                             // Cache hit - return response
                             if (response) {
+                                console.log(response);
                                 console.log("from Cache");
                                 return response;
                             }

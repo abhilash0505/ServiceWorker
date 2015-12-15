@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c7a0b3f-3e1b-4028-92a9-650e904a1ebf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/examples/1/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/examples/1/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/examples/1/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/package.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sw.js" afterPath="$PROJECT_DIR$/sw.js" />
     </list>
     <ignored path="ServiceWorker.iws" />
@@ -52,8 +46,8 @@
       <file leaf-file-name="sw.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9099804">
-              <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.7338552">
+              <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -298,8 +292,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9099804">
-          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.7338552">
+          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
           <folding />
         </state>
       </provider>
