@@ -2,4 +2,4 @@
 self.CACHE_NAME = 'cats-pictures-v1';
 
 // and require the sw-cache-all
-require('../../index.js');
+require('test/index.js');

@@ -423,3 +423,9 @@ Small Device Styles
   }
 
 }
+
+
+#testArea img{
+  width: 25px;
+  height: 25px;
+}
